@@ -1,0 +1,172 @@
+glunarclock
+-------------------------------------------
+Displays the current phase of the Moon as an applet for the gnome
+panel.
+In order to obtain correct data it is important that you set the
+latitude and longitude correctly for your location in the properties
+dialog and that the system clock is accurate.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+  GConf2-2.10.1-1
+  ORBit2-2.12.3-1
+  atk-runtime-1.9.1-1
+  expat-1.95.8-1
+  glib2-runtime-2.6.5-1
+  gnome-keyring-0.4.5-1
+  gnome-panel-2.10.2-1
+  gnome-vfs2-2.10.1-1
+  gtk2-x11-runtime-2.6.8-1
+  libXft2-2.1.6-1
+  libart_lgpl2-2.3.17-1
+  libaudiofile0-0.2.6-2
+  libbonobo2-2.10.1-1
+  libbonoboui2-2.10.1-1
+  libesound0-0.2.36-1
+  libfontconfig1-2.2.2-1
+  libfreetype26-2.1.9-1
+  libglade2-2.5.1-1
+  libgnome2-2.10.1-1
+  libgnomecanvas2-2.10.2-1
+  libgnomeui2-2.10.1-1
+  libiconv2-1.9.2-1
+  libintl3-0.14.1-1
+  libjpeg62-6b-11
+  libpopt0-1.6.4-4
+  libxml2-2.6.20-3
+  minires-1.00-1
+  openssl-0.9.8-2
+  pango-runtime-1.8.1-1
+  xorg-x11-bin-dlls-6.8.2.0-1
+  zlib-1.2.3-1
+
+Build requirements:
+  cygwin-1.5.18-1
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  intltool-0.33-1
+  libtool1.5-1.5.20-1
+  make-3.80-1
+  perl-5.8.7-4
+  pkgconfig-0.17.2-2
+  scrollkeeper-0.3.14-2
+  sed-4.1.4-1
+
+  GConf2-2.10.1-1
+  ORBit2-devel-2.12.3-1
+  atk-devel-1.9.1-1
+  expat-1.95.8-1
+  gettext-0.14.1-1
+  glib2-devel-2.6.5-1
+  gnome-keyring-0.4.5-1
+  gnome-panel-2.10.2-1
+  gnome-vfs2-2.10.1-1
+  gtk2-x11-devel-2.6.8-1
+  jpeg-6b-11
+  libXft-devel-2.1.6-1
+  libart_lgpl2-2.3.17-1
+  libaudiofile-devel-0.2.6-2
+  libbonobo2-devel-2.10.1-1
+  libbonoboui2-2.10.1-1
+  libesound-devel-0.2.36-1
+  libfontconfig-devel-2.2.2-1
+  libfreetype2-devel-2.1.9-1
+  libglade2-2.5.1-1
+  libgnome2-2.10.1-1
+  libgnomecanvas2-2.10.2-1
+  libgnomeui2-2.10.1-1
+  libiconv-1.9.2-1
+  libxml2-devel-2.6.20-3
+  minires-devel-1.00-1
+  openssl-devel-0.9.8-2
+  pango-devel-1.8.1-1
+  popt-1.6.4-4
+  xorg-x11-devel-6.8.2.0-1
+  zlib-1.2.3-1
+
+Canonical homepage:
+  http://glunarclock.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/glunarclock/
+
+-------------------------------------------
+
+Build instructions:
+  unpack glunarclock-0.32.4-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./glunarclock-0.32.4-1.sh all
+
+This will create:
+  /usr/src/glunarclock-0.32.4-1-src.tar.bz2
+  /usr/src/glunarclock-0.32.4-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/glunarclock.schemas
+  /etc/postinstall/glunarclock.sh
+  /etc/preremove/glunarclock.sh
+  /usr/lib/bonobo/servers/GNOME_GLunarclockApplet_Factory.server
+  /usr/lib/panel-2.0/glunarclock-applet-2.exe
+  /usr/share/doc/Cygwin/glunarclock-0.32.4.README
+  /usr/share/doc/glunarclock-0.32.4/ABOUT-NLS
+  /usr/share/doc/glunarclock-0.32.4/AUTHORS
+  /usr/share/doc/glunarclock-0.32.4/ChangeLog
+  /usr/share/doc/glunarclock-0.32.4/COPYING
+  /usr/share/doc/glunarclock-0.32.4/COPYING-DOCS
+  /usr/share/doc/glunarclock-0.32.4/INSTALL
+  /usr/share/doc/glunarclock-0.32.4/NEWS
+  /usr/share/doc/glunarclock-0.32.4/README
+  /usr/share/glunarclock/glunarclock.glade
+  /usr/share/gnome/help/glunarclock-applet-2/C/figures/glunarclock_applet.png
+  /usr/share/gnome/help/glunarclock-applet-2/C/glunarclock-applet-2.xml
+  /usr/share/gnome/help/glunarclock-applet-2/C/legal.xml
+  /usr/share/gnome-2.0/ui/GNOME_GLunarclockApplet.xml
+  /usr/share/locale/ast_ES/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/az/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/br/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/da/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/de/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/es/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/fi/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/fr/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/ga/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/gl/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/hu/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/ja/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/ms/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/nl/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/no/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/ro/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/ru/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/rw/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/sk/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/sr/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/sv/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/vi/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/locale/wa/LC_MESSAGES/glunarclock-0.32.mo
+  /usr/share/omf/glunarclock/glunarclock-applet-2-C.omf
+  /usr/share/pixmaps/glunarclock/cartoonmoon_12frames.png
+  /usr/share/pixmaps/glunarclock/moon_56frames.png
+  /usr/share/pixmaps/glunarclock-logo.png
+
+--------------------
+
+Port Notes:
+
+----- version 0.32.4-1 -----
+Version bump.
+
+----- version 0.32.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

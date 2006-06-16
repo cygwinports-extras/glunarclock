@@ -1,0 +1,9 @@
+category: Gnome
+requires: cygwin gnome-panel libglade2 libgnomeui2
+sdesc: "GNOME lunar phase panel applet"
+ldesc: "Displays the current phase of the Moon as an applet for the 
+gnome panel.
+
+In order to obtain correct data it is important that you set the
+latitude and longitude correctly for your location in the properties
+dialog and that the system clock is accurate."

@@ -1,0 +1,247 @@
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' glunarclock-0.32.4-orig/CYGWIN-PATCHES/README glunarclock-0.32.4/CYGWIN-PATCHES/README
+--- glunarclock-0.32.4-orig/CYGWIN-PATCHES/README	1969-12-31 18:00:00.000000000 -0600
++++ glunarclock-0.32.4/CYGWIN-PATCHES/README	2005-10-06 15:38:06.013375000 -0500
+@@ -0,0 +1,172 @@
++glunarclock
++-------------------------------------------
++Displays the current phase of the Moon as an applet for the gnome
++panel.
++In order to obtain correct data it is important that you set the
++latitude and longitude correctly for your location in the properties
++dialog and that the system clock is accurate.
++
++Runtime requirements:
++  cygwin-1.5.18-1
++  GConf2-2.10.1-1
++  ORBit2-2.12.3-1
++  atk-runtime-1.9.1-1
++  expat-1.95.8-1
++  glib2-runtime-2.6.5-1
++  gnome-keyring-0.4.5-1
++  gnome-panel-2.10.2-1
++  gnome-vfs2-2.10.1-1
++  gtk2-x11-runtime-2.6.8-1
++  libXft2-2.1.6-1
++  libart_lgpl2-2.3.17-1
++  libaudiofile0-0.2.6-2
++  libbonobo2-2.10.1-1
++  libbonoboui2-2.10.1-1
++  libesound0-0.2.36-1
++  libfontconfig1-2.2.2-1
++  libfreetype26-2.1.9-1
++  libglade2-2.5.1-1
++  libgnome2-2.10.1-1
++  libgnomecanvas2-2.10.2-1
++  libgnomeui2-2.10.1-1
++  libiconv2-1.9.2-1
++  libintl3-0.14.1-1
++  libjpeg62-6b-11
++  libpopt0-1.6.4-4
++  libxml2-2.6.20-3
++  minires-1.00-1
++  openssl-0.9.8-2
++  pango-runtime-1.8.1-1
++  xorg-x11-bin-dlls-6.8.2.0-1
++  zlib-1.2.3-1
++
++Build requirements:
++  cygwin-1.5.18-1
++  autoconf2.5-2.59-3
++  automake1.9-1.9.6-1
++  binutils-20050610-1
++  gawk-3.1.5-1
++  gcc-core-3.4.4-1
++  intltool-0.33-1
++  libtool1.5-1.5.20-1
++  make-3.80-1
++  perl-5.8.7-4
++  pkgconfig-0.17.2-2
++  scrollkeeper-0.3.14-2
++  sed-4.1.4-1
++
++  GConf2-2.10.1-1
++  ORBit2-devel-2.12.3-1
++  atk-devel-1.9.1-1
++  expat-1.95.8-1
++  gettext-0.14.1-1
++  glib2-devel-2.6.5-1
++  gnome-keyring-0.4.5-1
++  gnome-panel-2.10.2-1
++  gnome-vfs2-2.10.1-1
++  gtk2-x11-devel-2.6.8-1
++  jpeg-6b-11
++  libXft-devel-2.1.6-1
++  libart_lgpl2-2.3.17-1
++  libaudiofile-devel-0.2.6-2
++  libbonobo2-devel-2.10.1-1
++  libbonoboui2-2.10.1-1
++  libesound-devel-0.2.36-1
++  libfontconfig-devel-2.2.2-1
++  libfreetype2-devel-2.1.9-1
++  libglade2-2.5.1-1
++  libgnome2-2.10.1-1
++  libgnomecanvas2-2.10.2-1
++  libgnomeui2-2.10.1-1
++  libiconv-1.9.2-1
++  libxml2-devel-2.6.20-3
++  minires-devel-1.00-1
++  openssl-devel-0.9.8-2
++  pango-devel-1.8.1-1
++  popt-1.6.4-4
++  xorg-x11-devel-6.8.2.0-1
++  zlib-1.2.3-1
++
++Canonical homepage:
++  http://glunarclock.sourceforge.net/
++
++Canonical download:
++  http://prdownloads.sourceforge.net/glunarclock/
++
++-------------------------------------------
++
++Build instructions:
++  unpack glunarclock-0.32.4-1-src.tar.bz2
++    if you use setup to install this src package, it will be
++	 unpacked under /usr/src automatically
++  cd /usr/src
++  ./glunarclock-0.32.4-1.sh all
++
++This will create:
++  /usr/src/glunarclock-0.32.4-1-src.tar.bz2
++  /usr/src/glunarclock-0.32.4-1.tar.bz2
++
++-------------------------------------------
++
++Files included in the binary package:
++
++  /etc/gconf/schemas/glunarclock.schemas
++  /etc/postinstall/glunarclock.sh
++  /etc/preremove/glunarclock.sh
++  /usr/lib/bonobo/servers/GNOME_GLunarclockApplet_Factory.server
++  /usr/lib/panel-2.0/glunarclock-applet-2.exe
++  /usr/share/doc/Cygwin/glunarclock-0.32.4.README
++  /usr/share/doc/glunarclock-0.32.4/ABOUT-NLS
++  /usr/share/doc/glunarclock-0.32.4/AUTHORS
++  /usr/share/doc/glunarclock-0.32.4/ChangeLog
++  /usr/share/doc/glunarclock-0.32.4/COPYING
++  /usr/share/doc/glunarclock-0.32.4/COPYING-DOCS
++  /usr/share/doc/glunarclock-0.32.4/INSTALL
++  /usr/share/doc/glunarclock-0.32.4/NEWS
++  /usr/share/doc/glunarclock-0.32.4/README
++  /usr/share/glunarclock/glunarclock.glade
++  /usr/share/gnome/help/glunarclock-applet-2/C/figures/glunarclock_applet.png
++  /usr/share/gnome/help/glunarclock-applet-2/C/glunarclock-applet-2.xml
++  /usr/share/gnome/help/glunarclock-applet-2/C/legal.xml
++  /usr/share/gnome-2.0/ui/GNOME_GLunarclockApplet.xml
++  /usr/share/locale/ast_ES/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/az/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/br/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/da/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/de/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/es/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/fi/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/fr/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/ga/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/gl/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/hu/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/ja/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/ms/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/nl/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/no/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/ro/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/ru/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/rw/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/sk/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/sr/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/sv/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/vi/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/locale/wa/LC_MESSAGES/glunarclock-0.32.mo
++  /usr/share/omf/glunarclock/glunarclock-applet-2-C.omf
++  /usr/share/pixmaps/glunarclock/cartoonmoon_12frames.png
++  /usr/share/pixmaps/glunarclock/moon_56frames.png
++  /usr/share/pixmaps/glunarclock-logo.png
++
++--------------------
++
++Port Notes:
++
++----- version 0.32.4-1 -----
++Version bump.
++
++----- version 0.32.1-1 -----
++Initial release for Cygwin.
++
++
++Cygwin port maintained by:
++http://cygwinports.dotsrc.org/
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' glunarclock-0.32.4-orig/CYGWIN-PATCHES/setup.hint glunarclock-0.32.4/CYGWIN-PATCHES/setup.hint
+--- glunarclock-0.32.4-orig/CYGWIN-PATCHES/setup.hint	1969-12-31 18:00:00.000000000 -0600
++++ glunarclock-0.32.4/CYGWIN-PATCHES/setup.hint	2005-10-06 15:38:06.029000000 -0500
+@@ -0,0 +1,9 @@
++category: Gnome
++requires: cygwin gnome-panel libglade2 libgnomeui2
++sdesc: "GNOME lunar phase panel applet"
++ldesc: "Displays the current phase of the Moon as an applet for the 
++gnome panel.
++
++In order to obtain correct data it is important that you set the
++latitude and longitude correctly for your location in the properties
++dialog and that the system clock is accurate."
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' glunarclock-0.32.4-orig/omf.make glunarclock-0.32.4/omf.make
+--- glunarclock-0.32.4-orig/omf.make	2005-04-12 09:40:00.000000000 -0500
++++ glunarclock-0.32.4/omf.make	2005-10-06 14:37:33.107125000 -0500
+@@ -45,7 +45,7 @@
+ 	for file in $(omffile); do \
+ 		$(INSTALL_DATA) $$file.out $(DESTDIR)$(omf_dest_dir)/$$file; \
+ 	done
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir) -o $(DESTDIR)$(omf_dest_dir)
++#	-scrollkeeper-update -p $(scrollkeeper_localstate_dir) -o $(DESTDIR)$(omf_dest_dir)
+ 
+ uninstall-local-omf:
+ 	-for file in $(srcdir)/*.omf; do \
+@@ -53,7 +53,7 @@
+ 		rm -f $(omf_dest_dir)/$$basefile; \
+ 	done
+ 	-rmdir $(omf_dest_dir)
+-	-scrollkeeper-update -p $(scrollkeeper_localstate_dir)
++#	-scrollkeeper-update -p $(scrollkeeper_localstate_dir)
+ 
+ clean-local-omf:
+ 	-for file in $(omffile); do \
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' glunarclock-0.32.4-orig/screen-exec/egg-screen-help.c glunarclock-0.32.4/screen-exec/egg-screen-help.c
+--- glunarclock-0.32.4-orig/screen-exec/egg-screen-help.c	2005-04-10 11:01:43.000000000 -0500
++++ glunarclock-0.32.4/screen-exec/egg-screen-help.c	2005-10-06 15:10:03.435250000 -0500
+@@ -32,7 +32,7 @@
+ #include <glib.h>
+ #include <libgnome/gnome-help.h>
+ #include <libgnome/gnome-program.h>
+-#include <libgnome/gnome-i18n.h>
++#include <glib/gi18n.h>
+ 
+ #include "egg-screen-url.h"
+ #include "egg-screen-exec.h"
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' glunarclock-0.32.4-orig/src/Makefile.am glunarclock-0.32.4/src/Makefile.am
+--- glunarclock-0.32.4-orig/src/Makefile.am	2003-03-10 07:01:24.000000000 -0600
++++ glunarclock-0.32.4/src/Makefile.am	2005-10-06 15:25:02.247750000 -0500
+@@ -34,9 +34,9 @@
+ 	glunarclock.c glunarclock.h
+ 
+ glunarclock_applet_2_LDADD = \
++	$(top_builddir)/screen-exec/libscreen-exec.la	\
+ 	$(GNOME_APPLETS_LIBS)	\
+-	$(LIBGLADE_LIBS) \
+-	$(top_builddir)/screen-exec/libscreen-exec.la
++	$(LIBGLADE_LIBS)
+ 
+ serverdir       = $(libdir)/bonobo/servers
+ server_in_files = GNOME_GLunarclockApplet_Factory.server.in
+@@ -53,6 +53,7 @@
+ 
+ @INTLTOOL_SCHEMAS_RULE@
+ 
+-
++if GCONF_SCHEMAS_INSTALL
+ install-data-local:
+-	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(srcdir)/$(schemas_DATA) ;
++	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(schemas_DATA) ;
++endif
