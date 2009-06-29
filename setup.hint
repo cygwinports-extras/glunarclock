@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gnome-panel libglade2 libgnomeui2
+requires: gnome-panel libglade2 libgnomeui2
 sdesc: "GNOME lunar phase panel applet"
 ldesc: "Displays the current phase of the Moon as an applet for the 
 gnome panel.
